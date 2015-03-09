@@ -5,7 +5,7 @@ Ceci est une librairie pour agir en tant que Helper pour travailler avec les Doc
 This is an utils library to work with DDI-xml. The purpose of this library is to ease the process of translating variable label in a document. This library will retrieve the `<labl>` and the `<qstnLit>` value of an IDD file and will also tell if the label.size is greater than 251 caracters, that will mean that it will be chopped in SPSS. So that it will be easy to create a json file, export it to a db for a Rails/Flask app. 
 
 ####Ruby
-The ruby gem can be found [here:pyodesi](https://github.com/guinslym/uottawa_odesi_utils)
+The ruby gem can be found [here](https://github.com/guinslym/uottawa_odesi_utils)
 
 ## Installation
 
