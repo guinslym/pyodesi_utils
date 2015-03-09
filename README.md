@@ -22,7 +22,7 @@ Dealing with one Documentation file
 >>> from pyodesiutils import retrieve_label_and_qstnlit
 a = retrieve_label_and_qstnlit('esg-c-25.xml')
 print(a[0])
->>>{'label_warning': False, 'variable_name': u'RECID', 'qstnLit': u"Num\xe9ro d'identification de l'enregistrement.", 'label': u"Num\xe9ro d'identification de l'enregistrement."}
+>>>{'label_warning': False, 'variable_name': u'ABCDEF', 'qstnLit': u"Num\xe9ro d'identification de l'enregistrement.", 'label': u"Num\xe9ro d'identification de l'enregistrement."}
 ```
 
 Comparing two files
@@ -32,7 +32,7 @@ Comparing two files
 	#french file must be first
 	print(content[0])
 	=> {
-'label_warning_fr': False, 'variable_name': u'RECID', 'qstnLit_fr': u"Num\xe9ro d'identification de l'enregistrement.", 'label_fr': u"Num\xe9ro d'identification de l'enregistrement.",
+'label_warning_fr': False, 'variable_name': u'ABCDEF', 'qstnLit_fr': u"Num\xe9ro d'identification de l'enregistrement.", 'label_fr': u"Num\xe9ro d'identification de l'enregistrement.",
 'label_warning_en': False, 'qstnLit_en': u"Record identification.", 'label_en': u"Record identification"	
 }
 ```
