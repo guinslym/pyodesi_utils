@@ -18,9 +18,11 @@ setup(
     url='https://github.com/guinslym/pyodesi_utils',
     license='MIT',
     author='Guinsly Mondesir',
+    install_requires=['beautifulsoup4']
     author_email='guinslym@gmail.com',
     description='Helper for ODESI xml DDI documentation file',
     long_description=long_description,
+    keywords = ['ddi', 'idd', 'statcan', 'survey', 'xml'],
     package=['pyodesiutils'],
     classifiers=[],
         )
