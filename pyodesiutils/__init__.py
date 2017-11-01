@@ -9,6 +9,29 @@ def parse_this_xml_file(filename):
     soup = BeautifulSoup(open(filename), "xml")
     return soup
 
+def retrieve_variable_groups_and_label(filename):
+    soup = parse_this_xml_file(filename)
+    var =  soup.find_all('varGrp')
+    node_found = []
+
+    for i in var:
+        ID = i['ID']
+        g = lambda elem: i.find(elem).text.strip()
+        label  = g('labl')
+        if 'var' in i.attrs:
+            pass
+        else:
+            var = false
+        if 'varGrp' in i.attrs:
+            pass
+        else:
+            varGrp = False
+        node_found.append({
+            'label': label,
+            'ID':ID,
+             } )
+    return node_found
+
 def retrieve_label_and_qstnlit(filename):
     soup = parse_this_xml_file(filename)
     var =  soup.find_all('var')
@@ -62,4 +85,3 @@ def bilingual_files(xml_fr,xml_en):
                 node_found.append(tmp)
                 print(tmp)
     return node_found
-
